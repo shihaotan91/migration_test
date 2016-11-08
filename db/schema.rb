@@ -22,4 +22,15 @@ ActiveRecord::Schema.define(version: 20161108070804) do
     t.string   "last_name"
   end
 
+  create_table "managers", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "office_number"
+    t.string "cell_phone_num"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.date "uploaded_at"
+  end
+
 end
