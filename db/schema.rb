@@ -12,6 +12,16 @@
 
 ActiveRecord::Schema.define(version: 20161108070804) do
 
+  create_table "songs", force: :cascade do |t|
+    t.string   "title"
+    t.string  "duration"
+    t.integer  "year_release"
+    t.string   "album_title"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "last_name"
+  end
+
   create_table "managers", force: :cascade do |t|
     t.string "name"
     t.string "email"
